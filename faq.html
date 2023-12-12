@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Arial or any sans-serif font */
+            font-weight: bold;
+            background-color: #C3E6CB; /* Light green background */
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-family: Arial, sans-serif; /* Arial or any sans-serif font */
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #8bc68b; /* Dark green text shadow */
+        }
+
+        .faq {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .question {
+            font-size: 24px; /* Larger font size for questions */
+            cursor: pointer;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-family: Arial, sans-serif; /* Arial or any sans-serif font */
+        }
+
+        .question:hover {
+            background-color: rgba(255, 255, 0, 0.5); /* Transparent light yellow on hover */
+        }
+
+        .answer {
+            display: none;
+            font-size: 18px;
+            padding: 10px 0;
+            transition: max-height 0.5s ease-out;
+            overflow: hidden;
+        }
+
+        .show-answer {
+            display: block !important;
+            max-height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer1')">Is this healthy?</div>
+        <div class="answer" id="answer1">Yes, you will literally become super strong and live an extra 600 years. Doctor approved.</div>
+
+        <div class="question" onclick="toggleAnswer('answer2')">Why is it a ball?</div>
+        <div class="answer" id="answer2">I really don't know.</div>
+
+        <div class="question" onclick="toggleAnswer('answer3')">What if I have allergies?</div>
+        <div class="answer" id="answer3">Don't eat them.</div>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.classList.contains("show-answer")) {
+                answer.classList.remove("show-answer");
+            } else {
+                answer.classList.add("show-answer");
+            }
+        }
+    </script>
+</body>
+</html>
