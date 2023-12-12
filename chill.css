@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(223, 223, 158), 248, 209; 
+}
+.giant-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 930px;
+    height: 1024px;
+
+    background-image: url(pics/image\ 7.png);
+    background-size: cover;
+}
+
+.image-two {
+    position: absolute;
+    top: 85px;
+    left: 999px;
+    background-image: url(pics/image\ 8.png);
+    width: 339px;
+    height: 320px;
+}
+
+
+
+
+.image-four {
+    position: absolute;
+    top: 550px;
+    left: 969px;
+    background-image: url(pics/We\ are\ a\ local\ farm\,\ located\ in\ Trenton\,\ NJ.\ Our\ farm\ hand\ makes\ these\ natural\ grown\ breakfast\ balls.\ Founded\ in\ 1877\ by\ Hermey\ Hussain\,\ we\ continue\ her\ legacy\ in\ this\ family\ business..png);
+    width: 425px;
+    height: 210px;
+}

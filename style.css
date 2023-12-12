@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.background{
+    text-align: center; 
+}
+
+.background img {
+    width: 1000;
+    height: 500; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; 
+    text-align: center;
+   
+}
+
+body {
+    background-color: rgba(30, 30, 30, 1);
+}
+
+.title {
+    width: 746px;
+    height: 147px;
+    font-size: 80px;
+    font-family: 'Bella fair';
+    color: white;
+      position: absolute;
+    top: 191px;
+    left: 750px;
+    font-weight: 50;
+}
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #1E1E1E;
+    padding: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.navbar a {
+    font-family: monospace;
+   font-size: larger;
+  color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5;
+
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ffbd43;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: space-around; /* or space-between for even spacing */
+  flex-wrap: wrap; /* Allows images to wrap to the next line if space is insufficient */
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.image-container .jam,
+.image-container .butter,
+.image-container .swirl {
+  width: calc(33.33% - 20px); /* Adjust the width and margin for spacing between images */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+/* Adjust hover effect for all images */
+.image-container .jam img,
+.image-container .butter img,
+.image-container .swirl img {
+  transition: transform 0.3s;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust hover effect for individual images */
+.image-container .jam:hover img,
+.image-container .butter:hover img,
+.image-container .swirl:hover img {
+  transform: scale(1.2);
+}
+
+/* Display overlay button on hover */
+.image-container .jam:hover .button-overlay,
+.image-container .butter:hover .button-overlay,
+.image-container .swirl:hover .button-overlay {
+  display: block;
+}
+
+/* Your existing CSS code... */
+
+.image-placeholder-four {
+  margin-top: 40px; /* Increase the margin to create more space */
+  text-align: center;
+}
+
+.image-placeholder-four img {
+  width: 100%; /* Set the width to match the first banner */
+  max-width: 100%;
+}
+
