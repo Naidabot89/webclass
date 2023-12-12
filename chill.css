@@ -8,7 +8,7 @@ body {
     width: 930px;
     height: 1024px;
 
-    background-image: url(pics/image\ 7.png);
+    background-image: url(image 7.png);
     background-size: cover;
 }
 
@@ -16,7 +16,7 @@ body {
     position: absolute;
     top: 85px;
     left: 999px;
-    background-image: url(pics/image\ 8.png);
+    background-image: url(image 8.png);
     width: 339px;
     height: 320px;
 }
